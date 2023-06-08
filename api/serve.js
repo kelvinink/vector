@@ -5,7 +5,7 @@ const path = require('path');
 // Define a route to serve images based on ins_id
 app.get('/inscription/:ins_id', (req, res) => {
   const insId = req.params.ins_id;
-  const imagePath = path.join(__dirname, 'static', `${insId}.jpg`);
+  const imagePath = path.join(__dirname, 'static', `${insId}.png`);
 
   res.sendFile(imagePath, (err) => {
     if (err) {
