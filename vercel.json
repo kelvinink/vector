@@ -10,8 +10,5 @@
              "src": "/(.*)",
              "dest": "api/serve.py"
          }
-     ],
-     "dependencies": {
-        "flash": "2.3.2"
-    }
+     ]
  }
