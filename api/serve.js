@@ -3,9 +3,9 @@ const app = express();
 const path = require('path');
 
 // Define a route to serve images based on ins_id
-app.get('/inscription/:ins_id', (req, res) => {
+app.get('/inscription/vector/:ins_id', (req, res) => {
   const insId = req.params.ins_id;
-  const imagePath = path.join(__dirname, 'static', `${insId}.png`);
+  const imagePath = path.join(__dirname, 'static', 'vector', `${insId}.png`);
 
   res.sendFile(imagePath, (err) => {
     if (err) {
